@@ -1,0 +1,179 @@
+:root {
+  --navy: #1d3fbf;
+  --navy-dark: #16309a;
+  --ink: #22242a;
+  --muted: #5c6270;
+  --line: #e3e6ee;
+  --bg-soft: #f4f6fb;
+  --ok: #0e7a3d;
+  --full: #8a8f9c;
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  color: var(--ink);
+  line-height: 1.8;
+  font-size: 16px;
+  background: #fff;
+}
+a { color: var(--navy); }
+img { max-width: 100%; height: auto; display: block; }
+
+.site-header {
+  background: var(--navy);
+  color: #fff;
+}
+.site-header .inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 18px 20px 14px;
+}
+.site-header .brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+.site-header .brand small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: .85;
+}
+.main-nav {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+}
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 2px 0;
+  border-bottom: 2px solid transparent;
+}
+.main-nav a:hover, .main-nav a[aria-current="page"] { border-bottom-color: #fff; }
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+h1 { font-size: 26px; line-height: 1.5; margin: 0 0 16px; }
+h2 {
+  font-size: 20px;
+  margin: 36px 0 12px;
+  padding-left: 10px;
+  border-left: 5px solid var(--navy);
+  line-height: 1.5;
+}
+p { margin: 0 0 14px; }
+.lead { font-size: 18px; }
+
+.hero img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 18px 0;
+}
+.gallery img { border-radius: 8px; aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  background: #fff;
+}
+.card h3 { margin: 0 0 8px; font-size: 18px; }
+.card-grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+@media (min-width: 640px) { .card-grid { grid-template-columns: 1fr 1fr; } }
+
+.price-big { font-size: 30px; font-weight: 700; color: var(--navy-dark); }
+.badge {
+  display: inline-block;
+  background: var(--ok);
+  color: #fff;
+  border-radius: 999px;
+  padding: 1px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+table.slots, table.info {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  font-size: 16px;
+}
+table.slots th, table.slots td,
+table.info th, table.info td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+}
+table.slots th, table.info th { background: var(--bg-soft); font-weight: 700; }
+table.slots td { text-align: center; }
+table.slots th { text-align: center; }
+.st-open { color: var(--ok); font-weight: 700; }
+.st-full { color: var(--full); }
+
+.notice {
+  background: #fff8e6;
+  border: 1px solid #f0dfa8;
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin: 16px 0;
+}
+ol.flow { padding-left: 22px; }
+ol.flow li { margin-bottom: 8px; }
+
+.qa dt { font-weight: 700; font-size: 17px; margin: 22px 0 6px; }
+.qa dd { margin: 0 0 8px; }
+
+.cta {
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  padding: 22px;
+  text-align: center;
+  margin: 32px 0 0;
+}
+.cta .tel {
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--navy-dark);
+  text-decoration: none;
+  margin: 6px 0;
+}
+.btn {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 10px 26px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+.btn:hover { background: var(--navy-dark); }
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--muted);
+  font-size: 14px;
+}
+.site-footer .inner { max-width: 960px; margin: 0 auto; padding: 22px 20px 30px; }
+.site-footer p { margin: 0 0 6px; }
