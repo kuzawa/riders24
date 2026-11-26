@@ -5,7 +5,9 @@ GitHub Pages で公開する前提の、ビルド不要な HTML/CSS のみで構
 
 - 本番URL: https://riders24.kuzawashokai.com/
 - 構成:
-  - `/` ブランドトップ（拠点一覧）
+  - `/` ブランドトップ。現在は1拠点のみのため `/hikarigaoka/` へのリダイレクト
+    （meta refresh＋canonical の戻せる方式）。拠点が増えたら拠点一覧LPに差し替える。
+    旧ブランドトップの内容は git 履歴（89cc390 以前）に残っている
   - `/hikarigaoka/` 田柄光が丘トップ
   - `/hikarigaoka/price/` 料金とご契約
   - `/hikarigaoka/status/` 空き状況
@@ -15,7 +17,7 @@ GitHub Pages で公開する前提の、ビルド不要な HTML/CSS のみで構
 ## 更新のしかた
 
 - 空き状況: `hikarigaoka/status/index.html` の表と「現在、空きは◯台です」の文、
-  あわせて拠点トップ（`hikarigaoka/index.html`）とブランドトップ（`index.html`）の空き台数表記を直す。
+  あわせて拠点トップ（`hikarigaoka/index.html`）の空き台数表記を直す。
 - 料金: `hikarigaoka/price/index.html` と各ページの料金表記を直す。
 - 電話番号: 050-6872-6236（Brastel）。全ページに記載あり。
 
