@@ -1,4 +1,1 @@
-# ライダーズ24 サイト（kuzawa/riders24）
-
-- 運用メモ（サイト構成・更新手順・DNSの注意）は Google ドライブ「光が丘バイク駐車場」フォルダの `riders24-claude.md` にある。作業前に参照すること
-- 変更はプルリクで作る。承認は不要で、承認なしでマージしてよい
+Before working on this site, read the operations notes in `riders24-claude.md` on Google Drive.
